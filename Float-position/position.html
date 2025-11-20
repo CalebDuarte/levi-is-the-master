@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+<style>
+    .image-box {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+}
+
+.floating-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px; 
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+    line-height: 1; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.floating-text:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Hover tool</h1>
+
+<div class="image-box">
+    <img src="landscape.jpg" alt="Landscape image">
+    <p class="floating-text">Beautiful landscape click to view</p>
+</div>
+
+</body>
+</html>
+
